@@ -3,146 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - DevlpSoft</title>
+    <title>Contact – TradePulse Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fafafa;
-            color: #313639;
-        }
-
-        header {
-            background-color: #005792;
-            color: #ffffff;
-            padding: 20px 10%;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ffffff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1em;
-        }
-
-        nav a:hover {
-            color: #FFD700;
-        }
-
-        section {
-            padding: 60px 10%;
-            margin: 30px 0;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Arial', sans-serif;
-        }
-
-        h1 {
-            font-size: 2.25em;
-            color: #ffffff;
-        }
-
-        h2 {
-            font-size: 1.75em;
-            color: #005792;
-        }
-
-        h3 {
-            font-size: 1.25em;
-            color: #005792;
-        }
-
-        p, li {
-            line-height: 1.6;
-        }
-
-        a, a:visited {
-            color: #007cba;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: #005792;
-        }
-
-        .course-list {
-            list-style-type: circle;
-            margin: 20px 0;
-            padding-left: 20px;
-        }
-
-        footer {
-            background-color: #313639;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .highlight {
-            color: #007cba;
-            font-weight: bold;
-        }
+        :root { --primary: #2563eb; --primary-dark: #1d4ed8; --accent: #f59e0b; --text: #1f2937; --light: #f8fafc; --gray: #64748b; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:var(--light); color:var(--text); }
+        header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:white; padding:1.5rem 5%; position:sticky; top:0; z-index:1000; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
+        .header-inner { max-width:1400px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+        .logo { font-size:1.9rem; font-weight:700; }
+        nav ul { display:flex; list-style:none; gap:2.2rem; }
+        nav a { color:white; text-decoration:none; font-weight:500; }
+        nav a:hover { color:var(--accent); }
+        .page-hero { background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe); padding:100px 5%; text-align:center; }
+        .page-hero h1 { font-size:3.2rem; background:linear-gradient(to right,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .container { max-width:800px; margin:0 auto; padding:80px 5%; }
+        form { background:white; padding:3rem; border-radius:16px; box-shadow:0 15px 40px rgba(0,0,0,0.1); }
+        input, textarea { width:100%; padding:14px; margin:10px 0; border:1px solid #ddd; border-radius:8px; font-family:inherit; }
+        textarea { height:150px; }
+        .btn { background:var(--primary); color:white; padding:16px 40px; border:none; border-radius:8px; font-weight:600; cursor:pointer; }
+        .btn:hover { background:var(--primary-dark); }
+        footer { background:#0f172a; color:#cbd5e1; text-align:center; padding:3rem 5%; margin-top:5rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>DevlpSoft</h1>
-        <p>Your Partner in Language Learning & Tech Solutions</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="travel.html">Travel Assistance</a>
-            <a href="personalshopper.html">Personal Shopper</a>
-            <a href="Webdevelopment.html">Website Development</a>
-            <a href="softdevelopment.html">Software Development</a>
-            <a href="Callagent.html">Remote Call Center Agent</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
+        <div class="header-inner">
+            <div class="logo">TradePulse Academy</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="signals.html">Signals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Contact Us for Personalized Solutions</h2>
-        <p>Thank you for considering DevlpSoft for your language learning and tech needs! We offer a diverse range of services, from mastering languages like Urdu, Hindi, and Arabic to providing top-tier Website Development, Software Development, and Remote Call Center Agent services.</p>
-        <p>If you’d like to inquire about a specific service or request a customized quote, please fill out the form below, or reach out directly via email or phone to discuss your requirements. Whether it's designing a new website, developing software tailored to your business, or arranging dedicated remote support, our team is ready to help.</p>
+    <section class="page-hero">
+        <h1>Get in Touch</h1>
+    </section>
 
-        <h3>Our Services Include:</h3>
-        <ul class="course-list">
-            <li><span class="highlight">Website Development:</span> Crafting responsive, user-friendly websites to enhance your digital presence.</li>
-            <li><span class="highlight">Software Development:</span> Custom-built software solutions designed to streamline and grow your business operations.</li>
-            <li><span class="highlight">Remote Call Center Agent:</span> Providing professional, multilingual customer support for global businesses.</li>
-        </ul>
-
-        <p>If you’re interested in a service consultation, meeting arrangement, or detailed quote, please contact us using the form below. We’re here to tailor our services to your exact needs.</p>
-        
-        <form onsubmit="event.preventDefault(); window.location='http://devlpsoft.top/';">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" required><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-            <input type="submit" value="Submit">
+    <div class="container">
+        <form action="https://formspree.io/f/your-email-here" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </form>
-    </section>
-
-    <section>
-        <h2>Get in Touch</h2>
-        <p>Ready to start your language learning journey or explore our tech services? Connect with us at <a href="mailto:info@devlp-soft.top">info@devlp-soft.top</a> for more information on our offerings, or call us to arrange a consultation. We look forward to working with you!</p>
-    </section>
+        <p style="text-align:center; margin-top:2rem; color:var(--gray);">
+            Or email directly: <strong>hello@tradepulseacademy.com</strong>
+        </p>
+    </div>
 
     <footer>
-        <p>&copy; 2024 DevlpSoft. All Rights Reserved.</p>
+        <p>© 2025 TradePulse Academy – Educational Trading Platform. All rights reserved.</p>
+        <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">Trading involves risk. Our materials are for educational purposes only.</p>
     </footer>
-
 </body>
 </html>
