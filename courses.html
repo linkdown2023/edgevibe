@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses – TradePulse Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #2563eb; --primary-dark: #1d4ed8; --accent: #f59e0b; --text: #1f2937; --light: #f8fafc; --gray: #64748b; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:var(--light); color:var(--text); }
+        header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:white; padding:1.5rem 5%; position:sticky; top:0; z-index:1000; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
+        .header-inner { max-width:1400px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+        .logo { font-size:1.9rem; font-weight:700; }
+        nav ul { display:flex; list-style:none; gap:2.2rem; }
+        nav a { color:white; text-decoration:none; font-weight:500; }
+        nav a:hover { color:var(--accent); }
+        .page-hero { background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe); padding:100px 5%; text-align:center; }
+        .page-hero h1 { font-size:3.2rem; background:linear-gradient(to right,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .container { max-width:1100px; margin:0 auto; padding:80px 5%; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:2rem; margin-top:3rem; }
+        .card { background:white; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); }
+        .card h3 { padding:1.5rem 1.5rem 0; font-size:1.6rem; color:var(--primary); }
+        .card p { padding:1rem 1.5rem; color:var(--gray); }
+        .price { padding:0 1.5rem 1.5rem; font-size:2rem; font-weight:700; color:var(--primary); }
+        .btn { display:block; text-align:center; background:var(--primary); color:white; padding:1rem; text-decoration:none; font-weight:600; }
+        .btn:hover { background:var(--primary-dark); }
+        footer { background:#0f172a; color:#cbd5e1; text-align:center; padding:3rem 5%; margin-top:5rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">TradePulse Academy</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="signals.html">Signals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <h1>Choose Your Course</h1>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>Price Action Mastery</h3>
+                <p>Complete beginner-to-advanced course on reading charts, candlestick patterns, support/resistance, and clean entries.</p>
+                <div class="price">$297</div>
+                <a href="contact.html" class="btn">Enroll Now</a>
+            </div>
+            <div class="card">
+                <h3>Psychology & Risk Pro</h3>
+                <p>Master your mind and money management. The course that turns losing traders into consistent ones.</p>
+                <div class="price">$247</div>
+                <a href="contact.html" class="btn">Enroll Now</a>
+            </div>
+            <div class="card">
+                <h3>Full Academy Bundle</h3>
+                <p>Both courses + all indicators + lifetime updates + private community.</p>
+                <div class="price">$497 <small style="font-size:1rem; color:var(--gray);">(Save $147)</small></div>
+                <a href="contact.html" class="btn">Get Bundle</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 TradePulse Academy – Educational Trading Platform. All rights reserved.</p>
+        <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">Trading involves risk. Our materials are for educational purposes only.</p>
+    </footer>
+</body>
+</html>
