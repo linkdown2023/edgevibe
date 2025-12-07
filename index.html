@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradePulse Academy – Master Forex Trading</title>
-    <meta name="description" content="Premium forex trading courses, private mentorship, and professional tools. Learn proven strategies from an experienced trader." />
-
+    <title>TradePulse Academy – Under Construction</title>
+    <meta name="description" content="We're upgrading TradePulse Academy. Exciting new courses, tools, and mentorship programs are coming very soon!" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --primary: #2563eb;
@@ -18,10 +16,16 @@
             --gray: #64748b;
             --border: #e2e8f0;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
-
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--light); 
+            color: var(--text); 
+            line-height: 1.6; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
         header {
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
@@ -29,86 +33,132 @@
             position: sticky; top: 0; z-index: 1000;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
-
-        .header-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .header-inner { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
         .logo { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.5px; }
-        nav ul { display: flex; list-style: none; gap: 2.2rem; }
-        nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
-        nav a:hover { color: var(--accent); }
-
-        .hero { background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe); padding: 120px 5%; text-align: center; }
-        .hero-inner { max-width: 1000px; margin: 0 auto; }
-        .hero h1 { font-size: 3.8rem; margin-bottom: 1rem; background: linear-gradient(to right, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.3rem; color: var(--gray); max-width: 750px; margin: 0 auto 2rem; }
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 16px 36px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 15px rgba(37,99,235,0.3); }
-        .btn:hover { background: var(--primary-dark); transform: translateY(-3px); }
-
-        .services { padding: 100px 5%; max-width: 1400px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--text); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-        .card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .card h3 { font-size: 1.5rem; margin: 1.5rem 0 1rem; color: var(--primary); }
-
-        footer { background: #0f172a; color: #cbd5e1; text-align: center; padding: 3rem 5%; margin-top: 5rem; }
-
+        
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 5%;
+            background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+        }
+        .coming-soon {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .coming-soon h1 {
+            font-size: 4.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+        .coming-soon p {
+            font-size: 1.4rem;
+            color: var(--gray);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        .time-block {
+            background: white;
+            padding: 1.5rem 1rem;
+            border-radius: 12px;
+            min-width: 100px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .time-block span {
+            display: block;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .time-block small {
+            color: var(--gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(37,99,235,0.3);
+        }
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-4px);
+        }
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 3rem 5%;
+        }
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.8rem; }
-            .header-inner { flex-direction: column; gap: 1rem; }
-            nav ul { flex-wrap: wrap; justify-content: center; }
+            .coming-soon h1 { font-size: 3rem; }
+            .coming-soon p { font-size: 1.2rem; }
+            .countdown { gap: 1rem; }
+            .time-block { padding: 1rem 0.5rem; min-width: 80px; }
+            .time-block span { font-size: 2.2rem; }
         }
     </style>
 </head>
 <body>
-
     <header>
         <div class="header-inner">
             <div class="logo">TradePulse Academy</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="mentorship.html">Mentorship</a></li>
-                    <li><a href="signals.html">Signals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-inner">
-            <h1>Master Forex Trading</h1>
-            <p>Proven strategies, premium courses, private mentorship, and exclusive tools — everything you need to trade with confidence.</p>
-            <a href="courses.html" class="btn">Explore Courses</a>
-        </div>
-    </section>
+        <div class="coming-soon">
+            <h1>We're Upgrading!</h1>
+            <p>Bigger courses, better tools, stronger mentorship — the new TradePulse Academy launches very soon.</p>
+            
+            <!-- Optional countdown (you can remove if you don't have a fixed date) -->
+            <div class="countdown">
+                <div class="time-block"><span>14</span><small>Days</small></div>
+                <div class="time-block"><span>08</span><small>Hours</small></div>
+                <div class="time-block"><span>23</span><small>Minutes</small></div>
+                <div class="time-block"><span>57</span><small>Seconds</small></div>
+            </div> -->
 
-    <section class="services">
-        <h2 class="section-title">What We Offer</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Premium Courses</h3>
-                <p>Step-by-step video courses from beginner to advanced. Learn price action, risk management, and psychology.</p>
-            </div>
-            <div class="card">
-                <h3>1-on-1 Mentorship</h3>
-                <p>Personalized coaching with daily feedback, live trade reviews, and custom trading plans.</p>
-            </div>
-            <div class="card">
-                <h3>VIP Signals & Tools</h3>
-                <p>High-probability trade alerts and professional indicators used by full-time traders.</p>
-            </div>
+            <p style="margin-top: 3rem; font-size: 1.1rem; color: var(--text);">
+                Come back soon — it's going to be worth the wait 🔥
+            </p>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 TradePulse Academy – Educational Trading Platform. All rights reserved.</p>
+        <p>© 2025 TradePulse Academy – Coming Back Stronger</p>
         <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">
-            Trading involves risk. Our materials are for educational purposes only.
+            Thank you for your patience while we build something even better.
         </p>
     </footer>
-
 </body>
 </html>
