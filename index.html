@@ -35,12 +35,16 @@
         }
         .hero { background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe); padding: 140px 5%; text-align: center; }
         .hero h1 { font-size: 4rem; margin-bottom: 1.2rem; background: linear-gradient(to right, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.35rem; color: var(--gray); max-width: 750px; margin: 0 auto 2.5rem; }
+        .hero p { font-size: 1.35rem; color: var(--gray); max-width: 750px; margin: 0 auto 1.5rem; }
         .btn { display: inline-block; background: var(--primary); color: white; padding: 18px 40px; border-radius: 10px; font-weight: 600; text-decoration: none; transition: all 0.3s; box-shadow: 0 6px 20px rgba(30,64,175,0.3); }
         .btn:hover { background: var(--primary-dark); transform: translateY(-4px); }
-        footer { background: #0f172a; color: #cbd5e1; text-align: center; padding: 3.5rem 5%; margin-top: 6rem; }
+        .disclaimer { font-size: 1rem; color: #475569; margin-top: 2rem; }
+        footer { background: #0f172a; color: #cbd5e1; text-align: center; padding: 4rem 5% 3rem; margin-top: 8rem; }
+        footer p { margin: 8px 0; }
+        .legal { font-size: 0.85rem; opacity: 0.7; margin-top: 2rem; line-height: 1.5; }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.9rem; }
+            .hero { padding: 100px 5%; }
             .logo { font-size: 1.8rem; }
         }
     </style>
@@ -54,18 +58,26 @@
     </header>
 
     <section class="hero">
-        <div class="hero-inner">
-            <h1>Master Forex Trading</h1>
-            <p>Proven institutional-grade strategies, private mentorship, and elite tools — built for serious traders who want a real edge.</p>
-            <a href="#" class="btn">Site Launches Soon</a>
+        <h1>Master Forex Trading</h1>
+        <p>Premium educational courses, private mentorship, and professional trading tools for independent traders.</p>
+        
+        <a href="#" class="btn">Platform Launches Soon</a>
+        
+        <div class="disclaimer">
+            Education • Mentorship • Trading Tools Only<br>
+            <small>We do not manage client funds, provide investment advice, or trade on behalf of anyone.</small>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Edge Vibe — Doing Business As Edge Vibe</p>
-        <p style="font-size:0.9rem; margin-top:12px; opacity:0.8;">
-            New platform dropping soon. Thank you for your patience.
-        </p>
+        <p>© 2025 Edge Vibe — All Rights Reserved</p>
+        <p>New platform dropping soon. Thank you for your patience.</p>
+        
+        <div class="legal">
+            Edge Vibe is an educational platform only. We do not offer brokerage services, 
+            manage client capital, operate any investment funds, or provide personalized investment advice. 
+            All trading involves risk.
+        </div>
     </footer>
 
 </body>
