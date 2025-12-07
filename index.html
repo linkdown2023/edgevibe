@@ -3,162 +3,94 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradePulse Academy – Under Construction</title>
-    <meta name="description" content="We're upgrading TradePulse Academy. Exciting new courses, tools, and mentorship programs are coming very soon!" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Edge Vibe – Relaunch Incoming</title>
+    <meta name="description" content="Edge Vibe | DBA Cyber-Trader | The sharpest edge drops soon." />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --accent: #f59e0b;
-            --text: #1f2937;
-            --light: #f8fafc;
-            --gray: #64748b;
-            --border: #e2e8f0;
+            --bg: #0a0a0a;
+            --text: #e2e8f0;
+            --primary: #00ff9d;
+            --accent: #ff006e;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background: var(--light); 
-            color: var(--text); 
-            line-height: 1.6; 
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-        }
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            padding: 1.5rem 5%;
-            position: sticky; top: 0; z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        .header-inner { 
-            max-width: 1400px; 
-            margin: 0 auto; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-        }
-        .logo { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.5px; }
-        
-        .hero {
-            flex: 1;
-            display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 80px 5%;
-            background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+            overflow: hidden;
+            position: relative;
         }
-        .coming-soon {
-            max-width: 800px;
-            margin: 0 auto;
+        .glow {
+            position: absolute;
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, rgba(0,255157,0.2) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
         }
-        .coming-soon h1 {
-            font-size: 4.2rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(to right, var(--primary), var(--accent));
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 6.5rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            line-height: 1.2;
-        }
-        .coming-soon p {
-            font-size: 1.4rem;
-            color: var(--gray);
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 3rem 0;
-            flex-wrap: wrap;
-        }
-        .time-block {
-            background: white;
-            padding: 1.5rem 1rem;
-            border-radius: 12px;
-            min-width: 100px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .time-block span {
-            display: block;
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        .time-block small {
-            color: var(--gray);
-            font-size: 0.9rem;
+            letter-spacing: -4px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            line-height: 1;
         }
-        .btn {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 16px 40px;
-            border-radius: 8px;
+        .subtitle {
+            font-size: 1.4rem;
+            color: #94a3b8;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 4rem;
             font-weight: 600;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(37,99,235,0.3);
         }
-        .btn:hover {
-            background: var(--primary-dark);
-            transform: translateY(-4px);
+        .tag {
+            font-size: 1.1rem;
+            color: var(--primary);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
         }
         footer {
-            background: #0f172a;
-            color: #cbd5e1;
-            text-align: center;
-            padding: 3rem 5%;
+            position: absolute;
+            bottom: 2rem;
+            font-size: 0.9rem;
+            color: #475569;
+            letter-spacing: 2px;
         }
         @media (max-width: 768px) {
-            .coming-soon h1 { font-size: 3rem; }
-            .coming-soon p { font-size: 1.2rem; }
-            .countdown { gap: 1rem; }
-            .time-block { padding: 1rem 0.5rem; min-width: 80px; }
-            .time-block span { font-size: 2.2rem; }
+            .logo { font-size: 4rem; letter-spacing: -2px; }
+            .subtitle { font-size: 1rem; letter-spacing: 3px; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <div class="logo">TradePulse Academy</div>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="coming-soon">
-            <h1>We're Upgrading!</h1>
-            <p>Bigger courses, better tools, stronger mentorship — the new TradePulse Academy launches very soon.</p>
-            
-            <!-- Optional countdown (you can remove if you don't have a fixed date) -->
-            <div class="countdown">
-                <div class="time-block"><span>14</span><small>Days</small></div>
-                <div class="time-block"><span>08</span><small>Hours</small></div>
-                <div class="time-block"><span>23</span><small>Minutes</small></div>
-                <div class="time-block"><span>57</span><small>Seconds</small></div>
-            </div> -->
+    <div class="glow"></div>
 
-            <p style="margin-top: 3rem; font-size: 1.1rem; color: var(--text);">
-                Come back soon — it's going to be worth the wait 🔥
-            </p>
-        </div>
-    </section>
+    <div style="text-align:center; z-index:2;">
+        <div class="logo">EDGEVIBE</div>
+        <div class="subtitle">DBA cyber-trader</div>
+        <div class="tag">RELAUNCH INCOMING — STAY READY</div>
+    </div>
 
-    <footer>
-        <p>© 2025 TradePulse Academy – Coming Back Stronger</p>
-        <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">
-            Thank you for your patience while we build something even better.
-        </p>
-    </footer>
+    <footer>© 2025 Edge Vibe — Built different</footer>
+
 </body>
 </html>
