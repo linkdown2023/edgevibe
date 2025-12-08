@@ -3,79 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses – TradePulse Academy</title>
+    <title>Courses – Edge Vibe</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2563eb; --primary-dark: #1d4ed8; --accent: #f59e0b; --text: #1f2937; --light: #f8fafc; --gray: #64748b; }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Inter',sans-serif; background:var(--light); color:var(--text); }
-        header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:white; padding:1.5rem 5%; position:sticky; top:0; z-index:1000; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
-        .header-inner { max-width:1400px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
-        .logo { font-size:1.9rem; font-weight:700; }
-        nav ul { display:flex; list-style:none; gap:2.2rem; }
-        nav a { color:white; text-decoration:none; font-weight:500; }
-        nav a:hover { color:var(--accent); }
-        .page-hero { background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe); padding:100px 5%; text-align:center; }
-        .page-hero h1 { font-size:3.2rem; background:linear-gradient(to right,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-        .container { max-width:1100px; margin:0 auto; padding:80px 5%; }
-        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:2rem; margin-top:3rem; }
-        .card { background:white; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); }
-        .card h3 { padding:1.5rem 1.5rem 0; font-size:1.6rem; color:var(--primary); }
-        .card p { padding:1rem 1.5rem; color:var(--gray); }
-        .price { padding:0 1.5rem 1.5rem; font-size:2rem; font-weight:700; color:var(--primary); }
-        .btn { display:block; text-align:center; background:var(--primary); color:white; padding:1rem; text-decoration:none; font-weight:600; }
-        .btn:hover { background:var(--primary-dark); }
-        footer { background:#0f172a; color:#cbd5e1; text-align:center; padding:3rem 5%; margin-top:5rem; }
+        :root {--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--text:#1f2937;--light:#f8fafc;--gray:#64748b;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.8;}
+        header{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1.5rem 5%;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+        .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{display:flex;align-items:center;gap:12px;font-size:2rem;font-weight:800;}
+        .logo svg{width:42px;height:42px;}
+        nav ul{display:flex;list-style:none;gap:2.4rem;}
+        nav a{color:white;text-decoration:none;font-weight:500;}
+        nav a:hover{color:var(--accent);}
+        .page-hero{background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe);padding:120px 5%;text-align:center;}
+        .page-hero h1{font-size:3.6rem;background:linear-gradient(to right,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .container{max-width:1200px;margin:0 auto;padding:100px 5%;}
+        .intro{text-align:center;max-width:900px;margin:0 auto 3rem;color:#475569;font-size:1.2rem;}
+        .waitlist-btn{background:#10b981;color:white;padding:16px 40px;border-radius:8px;font-weight:600;display:inline-block;margin:2rem 0;}
+        .waitlist-btn:hover{background:#059669;}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2.5rem;}
+        .card{background:white;padding:2.8rem;border-radius:16px;box-shadow:0 12px 35px rgba(0,0,0,.08);transition:transform .4s;}
+        .card:hover{transform:translateY(-10px);}
+        .card h3{font-size:1.7rem;margin:1.5rem 0 1rem;color:var(--primary);}
+        .price{font-size:2.2rem;font-weight:800;color:var(--primary);}
+        .old-price{text-decoration:line-through;color:#94a3b8;font-size:1.4rem;margin-right:10px;}
+        .sale{background:#dc2626;color:white;font-size:0.8rem;padding:4px 10px;border-radius:6px;vertical-align:middle;}
+        .btn{display:block;background:var(--primary);color:white;padding:1rem;text-align:center;border-radius:8px;text-decoration:none;font-weight:600;margin-top:1.5rem;}
+        .btn:hover{background:var(--primary-dark);}
+        footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:4rem 5% 3rem;}
+        .legal{font-size:0.9rem;opacity:0.8;margin-top:1.5rem;line-height:1.7;}
     </style>
 </head>
 <body>
-
     <header>
         <div class="header-inner">
-            <div class="logo">TradePulse Academy</div>
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8"/>
+                    <path d="M25 50L45 30L65 50L45 70L25 50Z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="50" cy="50" r="20" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <span>Edge Vibe</span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="courses.html">Courses</a></li>
                     <li><a href="mentorship.html">Mentorship</a></li>
-                    <li><a href="signals.html">Signals</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="coding.html">Custom Coding</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="page-hero">
-        <h1>Choose Your Course</h1>
-    </section>
+    <section class="page-hero"><h1>Our Premium Courses</h1></section>
 
     <div class="container">
+        <p class="intro">Our courses are built from real trading experience — no theory, no fluff. Each one is designed to give you a complete, professional-level understanding of the markets.</p>
+        <p style="text-align:center;color:var(--accent);font-weight:600;font-size:1.3rem;">Join our free waitlist and get notified when new spots open + exclusive launch discounts!</p>
+        <div style="text-align:center;">
+            <a href="contact.html" class="waitlist-btn">Join Free Waitlist (0$)</a>
+        </div>
+
         <div class="grid">
             <div class="card">
+                <h3>Beginner Foundation</h3>
+                <p>Perfect start: charts, trends, support/resistance, basic risk management.</p>
+                <div class="price"><span class="old-price">$199</span> $99 <span class="sale">50% OFF</span></div>
+                <a href="contact.html" class="btn">Get Access Now</a>
+            </div>
+            <div class="card">
                 <h3>Price Action Mastery</h3>
-                <p>Complete beginner-to-advanced course on reading charts, candlestick patterns, support/resistance, and clean entries.</p>
-                <div class="price">$297</div>
-                <a href="contact.html" class="btn">Enroll Now</a>
+                <p>Advanced setups, institutional order flow, clean entries & exits.</p>
+                <div class="price"><span class="old-price">$397</span> $297 <span class="sale">25% OFF</span></div>
+                <a href="contact.html" class="btn">Get Access Now</a>
             </div>
             <div class="card">
                 <h3>Psychology & Risk Pro</h3>
-                <p>Master your mind and money management. The course that turns losing traders into consistent ones.</p>
-                <div class="price">$247</div>
-                <a href="contact.html" class="btn">Enroll Now</a>
+                <p>Master your mind, position sizing, and emotional control.</p>
+                <div class="price"><span class="old-price">$347</span> $247</div>
+                <a href="contact.html" class="btn">Get Access Now</a>
             </div>
             <div class="card">
                 <h3>Full Academy Bundle</h3>
-                <p>Both courses + all indicators + lifetime updates + private community.</p>
-                <div class="price">$497 <small style="font-size:1rem; color:var(--gray);">(Save $147)</small></div>
-                <a href="contact.html" class="btn">Get Bundle</a>
+                <p>All 3 courses + indicators + lifetime community + future updates</p>
+                <div class="price"><span class="old-price">$943</span> $497 <span class="sale">SAVE $446</span></div>
+                <a href="contact.html" class="btn">Get Bundle Now</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>© 2025 TradePulse Academy – Educational Trading Platform. All rights reserved.</p>
-        <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">Trading involves risk. Our materials are for educational purposes only.</p>
+        <p>© 2025 Edge Vibe — Forex Educational Platform. All rights reserved.</p>
+        <div class="legal">
+            Trading involves significant risk. All content is for educational purposes only.<br>We do not provide financial advice or trade signals.
+        </div>
     </footer>
 </body>
 </html>

@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About – TradePulse Academy</title>
+    <title>About – Edge Vibe</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2563eb; --primary-dark: #1d4ed8; --accent: #f59e0b; --text: #1f2937; --light: #f8fafc; --gray: #64748b; }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Inter',sans-serif; background:var(--light); color:var(--text); line-height:1.6; }
-        header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:white; padding:1.5rem 5%; position:sticky; top:0; z-index:1000; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
-        .header-inner { max-width:1400px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
-        .logo { font-size:1.9rem; font-weight:700; }
-        nav ul { display:flex; list-style:none; gap:2.2rem; }
-        nav a { color:white; text-decoration:none; font-weight:500; }
-        nav a:hover { color:var(--accent); }
-        .page-hero { background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe); padding:100px 5%; text-align:center; }
-        .page-hero h1 { font-size:3.2rem; background:linear-gradient(to right,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-        .container { max-width:1000px; margin:0 auto; padding:80px 5%; }
-        .about-text { font-size:1.15rem; color:var(--gray); margin:2rem 0; }
-        footer { background:#0f172a; color:#cbd5e1; text-align:center; padding:3rem 5%; margin-top:5rem; }
-        @media (max-width:768px) { .header-inner { flex-direction:column; gap:1rem; } nav ul { flex-wrap:wrap; justify-content:center; } }
+        :root {--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--text:#1f2937;--light:#f8fafc;--gray:#64748b;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.9;}
+        header{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1.5rem 5%;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+        .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{display:flex;align-items:center;gap:12px;font-size:2rem;font-weight:800;}
+        .logo svg{width:42px;height:42px;}
+        nav ul{display:flex;list-style:none;gap:2.4rem;}
+        nav a{color:white;text-decoration:none;font-weight:500;}
+        nav a:hover{color:var(--accent);}
+        .page-hero{background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe);padding:130px 5%;text-align:center;}
+        .page-hero h1{font-size:3.8rem;background:linear-gradient(to right,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .container{max-width:900px;margin:0 auto;padding:80px 5%;text-align:center;}
+        .about-text{font-size:1.2rem;color:#475569;margin:2rem auto;max-width:800px;line-height:1.9;}
+        .highlight{background:var(--primary);color:white;padding:3.5rem;border-radius:20px;margin:4rem auto;box-shadow:0 20px 50px rgba(37,99,235,.25);}
+        .highlight p{font-size:1.3rem;}
+        footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:4rem 5% 3rem;}
+        .legal{font-size:0.9rem;opacity:0.8;margin-top:1.5rem;line-height:1.7;}
     </style>
 </head>
 <body>
-
     <header>
         <div class="header-inner">
-            <div class="logo">TradePulse Academy</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="mentorship.html">Mentorship</a></li>
-                    <li><a href="signals.html">Signals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8"/>
+                    <path d="M25 50L45 30L65 50L45 70L25 50Z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="50" cy="50" r="20" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <span>Edge Vibe</span>
+            </div>
+            <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="courses.html">Courses</a></li><li><a href="mentorship.html">Mentorship</a></li><li><a href="community.html">Community</a></li><li><a href="coding.html">Custom Coding</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
         </div>
     </header>
 
-    <section class="page-hero">
-        <h1>About TradePulse Academy</h1>
-    </section>
+    <section class="page-hero"><h1>About Edge Vibe</h1></section>
 
     <div class="container">
-        <p class="about-text">I’ve been trading full-time for over 8 years, turning a small account into consistent monthly profits using simple, repeatable strategies.</p>
-        <p class="about-text">After mentoring hundreds of students privately, I created TradePulse Academy to help serious traders cut years off their learning curve — without the noise, hype, or expensive mistakes most people make.</p>
-        <p class="about-text">Everything I teach is what I personally use every single day in my own trading. No theory. No recycled YouTube content. Just proven price action, risk management, and psychology that actually works in real market conditions.</p>
-        <p class="about-text">My mission is simple: help you become a confident, independent trader who can read the market like a professional.</p>
+        <p class="about-text">Edge Vibe was created by a full-time trader with over 10 years of consistent profitability in the forex markets.</p>
+        <p class="about-text">After mentoring hundreds of students privately and seeing the same mistakes repeated across the industry — hype, paid signals, and "magic systems" — the decision was made to build something different.</p>
+        <p class="about-text">A premium educational platform focused 100% on real skill development: clean price action, institutional concepts, risk mastery, and unbreakable trading psychology.</p>
+        <p class="about-text">No shortcuts. No alerts. No recycled YouTube content.</p>
+        <p class="about-text">Just proven methods used daily by professional traders — delivered with clarity, structure, and genuine support.</p>
+
+        <div class="highlight">
+            <p>Our mission is simple: help serious traders become confident, independent, and consistently profitable — for life.</p>
+        </div>
     </div>
 
     <footer>
-        <p>© 2025 TradePulse Academy – Educational Trading Platform. All rights reserved.</p>
-        <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">Trading involves risk. Our materials are for educational purposes only.</p>
+        <p>© 2025 Edge Vibe — Forex Educational Platform. All rights reserved.</p>
+        <div class="legal">
+            Trading forex and CFDs involves significant risk and may not be suitable for all investors.<br>
+            All content on this website is for educational purposes only. We do not provide financial advice, investment recommendations, or trade signals.
+        </div>
     </footer>
 </body>
 </html>

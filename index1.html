@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edge Vibe – Master Forex Trading Cleanly & Professionally</title>
-    <meta name="description" content="Premium forex education, private mentorship, student community, and custom trading tools. Learn proven price-action strategies from an experienced independent trader." />
+    <title>Edge Vibe – Master Forex Trading with Clarity & Discipline</title>
+    <meta name="description" content="Premium forex education platform offering structured courses, private mentorship, active student community, and custom trading tool development." />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--text:#1f2937;--light:#f8fafc;--gray:#64748b;--border:#e2e8f0;}
@@ -12,30 +12,44 @@
         body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.6;}
         header{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1.5rem 5%;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
         .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
-        .logo{font-size:1.9rem;font-weight:700;letter-spacing:-0.5px;}
-        nav ul{display:flex;list-style:none;gap:2.2rem;}
+        .logo{display:flex;align-items:center;gap:12px;font-size:2rem;font-weight:800;letter-spacing:-0.5px;}
+        .logo svg{width:42px;height:42px;}
+        nav ul{display:flex;list-style:none;gap:2.4rem;}
         nav a{color:white;text-decoration:none;font-weight:500;transition:color .3s;}
         nav a:hover{color:var(--accent);}
-        .hero{background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe);padding:120px 5%;text-align:center;}
-        .hero-inner{max-width:1000px;margin:0 auto;}
+        .hero{background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe);padding:140px 5% 100px;text-align:center;}
         .hero h1{font-size:3.8rem;margin-bottom:1rem;background:linear-gradient(to right,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-        .hero p{font-size:1.3rem;color:var(--gray);max-width:750px;margin:0 auto 2rem;}
-        .btn{display:inline-block;background:var(--primary);color:white;padding:16px 36px;border-radius:8px;font-weight:600;text-decoration:none;transition:all .3s;box-shadow:0 4px 15px rgba(37,99,235,.3);}
-        .btn:hover{background:var(--primary-dark);transform:translateY(-3px);}
-        .services{padding:100px 5%;max-width:1400px;margin:0 auto;}
-        .section-title{text-align:center;font-size:2.5rem;margin-bottom:3rem;color:var(--text);}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;}
-        .card{background:white;padding:2.5rem;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:transform .3s;}
-        .card:hover{transform:translateY(-10px);}
-        .card h3{font-size:1.5rem;margin:1.5rem 0 1rem;color:var(--primary);}
-        footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:3rem 5%;margin-top:5rem;}
-        @media(max-width:768px){.hero h1{font-size:2.8rem;}.header-inner{flex-direction:column;gap:1rem;}nav ul{flex-wrap:wrap;justify-content:center;}}
+        .hero p{font-size:1.35rem;color:var(--gray);max-width:780px;margin:0 auto 2.5rem;}
+        .btn{display:inline-block;background:var(--primary);color:white;padding:16px 40px;border-radius:8px;font-weight:600;text-decoration:none;transition:all .3s;box-shadow:0 6px 20px rgba(37,99,235,.3);}
+        .btn:hover{background:var(--primary-dark);transform:translateY(-4px);}
+        .features{padding:100px 5%;background:white;}
+        .section-title{text-align:center;font-size:2.6rem;margin-bottom:3.5rem;color:var(--text);}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem;max-width:1400px;margin:0 auto;}
+        .card{background:white;padding:2.8rem;border-radius:16px;box-shadow:0 12px 35px rgba(0,0,0,.08);transition:transform .4s;border:1px solid #f1f5f9;}
+        .card:hover{transform:translateY(-12px);}
+        .card h3{font-size:1.55rem;margin:1.5rem 0 1rem;color:var(--primary);}
+        .card p{color:var(--gray);font-size:1.05rem;}
+        .steps{padding:100px 5%;background:#fafbff;text-align:center;}
+        .step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;max-width:1100px;margin:40px auto 0;}
+        .step{background:white;padding:2.5rem;border-radius:14px;box-shadow:0 8px 25px rgba(0,0,0,.06);}
+        .step-num{font-size:4rem;font-weight:800;color:var(--primary);opacity:0.15;margin-bottom:1rem;}
+        .step h4{font-size:1.4rem;margin-bottom:1rem;color:var(--text);}
+        footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:4rem 5% 3rem;}
+        .legal{font-size:0.9rem;opacity:0.8;margin-top:1.5rem;line-height:1.7;}
+        @media(max-width:768px){.hero h1{font-size:2.9rem;}.header-inner{flex-direction:column;gap:1.2rem;text-align:center;}}
     </style>
 </head>
 <body>
     <header>
         <div class="header-inner">
-            <div class="logo">Edge Vibe</div>
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8"/>
+                    <path d="M25 50L45 30L65 50L45 70L25 50Z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="50" cy="50" r="20" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <span>Edge Vibe</span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -51,40 +65,37 @@
     </header>
 
     <section class="hero">
-        <div class="hero-inner">
-            <h1>Master Forex Trading</h1>
-            <p>Proven price-action education, private 1-on-1 mentorship, active student community, and custom tool development — everything you need to become a confident, independent trader.</p>
-            <a href="courses.html" class="btn">Explore Courses</a>
+        <h1>Master Forex Trading<br><span style="background:linear-gradient(to right,#60a5fa,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:0.9em;">With Clarity, Discipline & Real Skill</span></h1>
+        <p>Structured education, private mentorship, active student community, and professional tool development — built for traders who want to become consistently profitable without shortcuts.</p>
+        <a href="courses.html" class="btn">Start Your Journey</a>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Everything You Need in One Place</h2>
+        <div class="grid">
+            <div class="card"><h3>Premium Courses</h3><p>From zero to advanced: clean price action, institutional concepts, and trading psychology — taught step-by-step.</p></div>
+            <div class="card"><h3>1-on-1 Mentorship</h3><p>8 weeks of daily personal guidance with live trade reviews and a custom trading plan built for your lifestyle.</p></div>
+            <div class="card"><h3>Private Student Community</h3><p>Lifetime access to a serious group of traders sharing charts, feedback, and real-market experience daily.</p></div>
+            <div class="card"><h3>Custom Tool Development</h3><p>Professional indicators, EAs, and automation in MQL5, MQL4, or Python — coded exactly to your strategy.</p></div>
         </div>
     </section>
 
-    <section class="services">
-        <h2 class="section-title">What We Offer</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Premium Courses</h3>
-                <p>From complete beginner to advanced price-action mastery and trading psychology.</p>
-            </div>
-            <div class="card">
-                <h3>1-on-1 Mentorship</h3>
-                <p>Personalized 8-week program with daily support and custom trading plan.</p>
-            </div>
-            <div class="card">
-                <h3>Active Student Community</h3>
-                <p>Lifetime access to a private group of serious traders sharing charts and ideas daily.</p>
-            </div>
-            <div class="card">
-                <h3>Custom Tool Development</h3>
-                <p>Professional MQL5, MQL4, and Python automation built exactly to your strategy.</p>
-            </div>
+    <section class="steps">
+        <h2 class="section-title">How It Works</h2>
+        <div class="step-grid">
+            <div class="step"><div class="step-num">1</div><h4>Learn the Foundation</h4><p>Start with structured courses that teach real price action and risk management.</p></div>
+            <div class="step"><div class="step-num">2</div><h4>Join the Community</h4><p>Connect with other serious students and see real trades every day.</p></div>
+            <div class="step"><div class="step-num">3</div><h4>Get Personal Mentorship</h4><p>Accelerate your growth with 1-on-1 coaching and live feedback.</p></div>
+            <div class="step"><div class="step-num">4</div><h4>Trade Independently</h4><p>Become a confident, self-sufficient trader — for life.</p></div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Edge Vibe – Forex Educational Platform. All rights reserved.</p>
-        <p style="font-size:0.9rem;margin-top:10px;opacity:0.8;">
-            Trading involves substantial risk. All material is for educational purposes only.
-        </p>
+        <p>© 2025 Edge Vibe — Forex Educational Platform. All rights reserved.</p>
+        <div class="legal">
+            Trading forex and CFDs involves significant risk and may not be suitable for all investors.<br>
+            All content on this website is for educational purposes only. We do not provide financial advice, manage funds, or send trade signals.
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Tool Development – Edge Vibe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--text:#1f2937;--light:#f8fafc;--gray:#64748b;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.8;}
+        header{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1.5rem 5%;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+        .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{display:flex;align-items:center;gap:12px;font-size:2rem;font-weight:800;}
+        .logo svg{width:42px;height:42px;}
+        nav ul{display:flex;list-style:none;gap:2.4rem;}
+        nav a{color:white;text-decoration:none;font-weight:500;}
+        nav a:hover{color:var(--accent);}
+        .page-hero{background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe);padding:120px 5%;text-align:center;}
+        .page-hero h1{font-size:3.6rem;background:linear-gradient(to right,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .container{max-width:900px;margin:0 auto;padding:100px 5%;text-align:center;}
+        .intro-text{font-size:1.2rem;color:#475569;max-width:800px;margin:0 auto 3rem;line-height:1.9;}
+        .highlight{background:var(--primary);color:white;padding:3.5rem;border-radius:20px;margin:3rem 0;}
+        .btn{background:var(--primary);color:white;padding:16px 50px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;margin-top:2rem;}
+        .btn:hover{background:var(--primary-dark);}
+        footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:4rem 5% 3rem;}
+        .legal{font-size:0.9rem;opacity:0.8;margin-top:1.5rem;line-height:1.7;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8"/>
+                    <path d="M25 50L45 30L65 50L45 70L25 50Z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="50" cy="50" r="20" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <span>Edge Vibe</span>
+            </div>
+            <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="courses.html">Courses</a></li><li><a href="mentorship.html">Mentorship</a></li><li><a href="community.html">Community</a></li><li><a href="coding.html">Custom Coding</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        </div>
+    </header>
+
+    <section class="page-hero"><h1>Custom Tool Development</h1></section>
+
+    <div class="container">
+        <p class="intro-text">Need a professional indicator, Expert Advisor, or automation script built exactly to your strategy?<br>We specialize in clean, efficient code for MetaTrader 4/5 (MQL4/MQL5) and Python.<br>From simple alerts to fully automated systems — we bring your ideas to life.</p>
+
+        <div class="highlight">
+            <h2 style="margin-bottom:1.5rem;">We Build</h2>
+            <ul style="text-align:left;max-width:600px;margin:0 auto;line-height:2.3;color:white;">
+                <li>Custom indicators with alerts</li>
+                <li>Fully or semi-automated Expert Advisors</li>
+                <li>Advanced trade & risk management tools</li>
+                <li>Backtesting & optimization scripts</li>
+                <li>Pine Script → MT4/MT5 conversion</li>
+                <li>Dashboard & multi-timeframe tools</li>
+                <li>Python automation for brokers with API</li>
+            </ul>
+            <p style="font-size:1.4rem;margin-top:2rem;">Every project is 100% custom — pricing depends on complexity.</p>
+        </div>
+        <a href="contact.html" class="btn">Discuss Your Project</a>
+    </div>
+
+    <footer>
+        <p>© 2025 Edge Vibe — Forex Educational Platform. All rights reserved.</p>
+        <div class="legal">
+            Trading involves significant risk. All content is for educational purposes only.<br>We do not provide financial advice or trade signals.
+        </div>
+    </footer>
+</body>
+</html>

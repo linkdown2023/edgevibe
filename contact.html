@@ -3,67 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – TradePulse Academy</title>
+    <title>Contact – Edge Vibe</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2563eb; --primary-dark: #1d4ed8; --accent: #f59e0b; --text: #1f2937; --light: #f8fafc; --gray: #64748b; }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Inter',sans-serif; background:var(--light); color:var(--text); }
-        header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:white; padding:1.5rem 5%; position:sticky; top:0; z-index:1000; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
-        .header-inner { max-width:1400px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
-        .logo { font-size:1.9rem; font-weight:700; }
-        nav ul { display:flex; list-style:none; gap:2.2rem; }
-        nav a { color:white; text-decoration:none; font-weight:500; }
-        nav a:hover { color:var(--accent); }
-        .page-hero { background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe); padding:100px 5%; text-align:center; }
-        .page-hero h1 { font-size:3.2rem; background:linear-gradient(to right,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-        .container { max-width:800px; margin:0 auto; padding:80px 5%; }
-        form { background:white; padding:3rem; border-radius:16px; box-shadow:0 15px 40px rgba(0,0,0,0.1); }
-        input, textarea { width:100%; padding:14px; margin:10px 0; border:1px solid #ddd; border-radius:8px; font-family:inherit; }
-        textarea { height:150px; }
-        .btn { background:var(--primary); color:white; padding:16px 40px; border:none; border-radius:8px; font-weight:600; cursor:pointer; }
-        .btn:hover { background:var(--primary-dark); }
-        footer { background:#0f172a; color:#cbd5e1; text-align:center; padding:3rem 5%; margin-top:5rem; }
+        :root {--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--text:#1f2937;--light:#f8fafc;--gray:#64748b;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.8;}
+        header{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1.5rem 5%;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+        .header-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{display:flex;align-items:center;gap:12px;font-size:2rem;font-weight:800;}
+        .logo svg{width:42px;height:42px;}
+        nav ul{display:flex;list-style:none;gap:2.4rem;}
+        nav a{color:white;text-decoration:none;font-weight:500;}
+        nav a:hover{color:var(--accent);}
+        .page-hero{background:linear-gradient(to bottom right,#f0f9ff,#e0f2fe);padding:120px 5%;text-align:center;}
+        .page-hero h1{font-size:3.6rem;background:linear-gradient(to right,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .container{max-width:800px;margin:0 auto;padding:100px 5%;}
+        .intro-text{font-size:1.2rem;color:#475569;text-align:center;margin-bottom:3rem;}
+        form{background:white;padding:3rem;border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.1);}
+        input,textarea{width:100%;padding:14px;margin:12px 0;border:1px solid #ddd;border-radius:8px;font-family:inherit;}
+        textarea{height:160px;}
+        .btn{background:var(--primary);color:white;padding:16px 40px;border:none;border-radius:8px;font-weight:600;cursor:pointer;}
+        .btn:hover{background:var(--primary-dark);}
+        footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:4rem 5% 3rem;}
+        .legal{font-size:0.9rem;opacity:0.8;margin-top:1.5rem;line-height:1.7;}
     </style>
 </head>
 <body>
-
     <header>
         <div class="header-inner">
-            <div class="logo">TradePulse Academy</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="mentorship.html">Mentorship</a></li>
-                    <li><a href="signals.html">Signals</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8"/>
+                    <path d="M25 50L45 30L65 50L45 70L25 50Z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="50" cy="50" r="20" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <span>Edge Vibe</span>
+            </div>
+            <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="courses.html">Courses</a></li><li><a href="mentorship.html">Mentorship</a></li><li><a href="community.html">Community</a></li><li><a href="coding.html">Custom Coding</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
         </div>
     </header>
 
-    <section class="page-hero">
-        <h1>Get in Touch</h1>
-    </section>
+    <section class="page-hero"><h1>Get in Touch</h1></section>
 
     <div class="container">
-        <form action="https://formspree.io/f/your-email-here" method="POST">
+        <p class="intro-text">Have questions about courses, mentorship, community, or custom coding?<br>Send us a message — we reply within 24 hours.<br>Feel free to include as many details as possible so we can help you faster!</p>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject">
+            <input type="text" name="subject" placeholder="Subject (e.g. Course Inquiry, Mentorship Application)">
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
-        <p style="text-align:center; margin-top:2rem; color:var(--gray);">
-            Or email directly: <strong>hello@tradepulseacademy.com</strong>
+
+        <p style="text-align:center;margin-top:2rem;color:var(--gray);font-size:1.1rem;">
+            Or email directly: <strong>hello@edgevibe.top</strong>
         </p>
     </div>
 
     <footer>
-        <p>© 2025 TradePulse Academy – Educational Trading Platform. All rights reserved.</p>
-        <p style="font-size:0.9rem; margin-top:10px; opacity:0.8;">Trading involves risk. Our materials are for educational purposes only.</p>
+        <p>© 2025 Edge Vibe — Forex Educational Platform. All rights reserved.</p>
+        <div class="legal">
+            Trading involves significant risk. All content is for educational purposes only.<br>We do not provide financial advice or trade signals.
+        </div>
     </footer>
 </body>
 </html>
